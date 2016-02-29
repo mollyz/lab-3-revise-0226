@@ -6,11 +6,11 @@ function createnew() {
 }
 
 /*ok*/
-function seedetail(id){
+/*function seedetail(id){
 	$("#searchArea").hide();
-	$("#detailView").show();
-	DetailView($("#detailView"),model,id);
-	} 
+	$("#detailView").show();*/
+//	DetailView($("#detailView"),model,id);
+	// } */
 
 /*ok*/
 /*function backtoselect() {
@@ -33,22 +33,20 @@ function seedetail(id){
 	   $("#searchArea").show();
 }*/
 /*ok*/
-function editmenu() {
+/*function editmenu() {
 	
 	$("#topBar").hide();
 	$("#dinnerOverview").hide();
 	$("#DinnerPreparation").hide();
 	$("#SecondPage").show();
 	$("#searchArea").show();
-	$("#showList").show();
+	$("#showList").show()
 
-}
+}*/
 
 /*ok*/
-function finalresult() {
+/*function finalresult() {
   $("#dinnerOverview").hide();
   $("#DinnerPreparation").show();
   $("#topBar").show();
-
- 
-}
+}*/

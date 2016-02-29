@@ -2,9 +2,9 @@
 var DinnerModel = function() {
 	var menu = [];
 	numberOfGuests = 1; 
-	var selectedDishId="";//set default number of guests
+	this.selectedDishId= 1;//set default number of guests
 	
-	menu['starter'] =100;
+	menu['starter'] =1;
 	var observers = []; //set a starter to the menu, to use for testing
 
 	
@@ -40,6 +40,14 @@ var DinnerModel = function() {
 			return numberOfGuests;
 	}
 	
+    this.setSelectedDishId = function(id){
+    	this.selectedDishId = id;
+    	this.notifyObservers("selectedDishId");
+    }
+
+	this.getSelectedDishId = function(){
+    	return this.selectedDishId;
+    }
 	//function that returns a dish of specific ID
 	//ok
 	this.getDish = function (id) {
@@ -149,9 +157,6 @@ var DinnerModel = function() {
         this.notifyObservers();//TODO Lab 2 
 	}
 
-    this.getSelectedDishId = function(){
-    	return selectedDishId;
-    }
 
 	//Removes dish from menu
 	this.removeDishFromMenu = function(id) {

@@ -14,13 +14,16 @@ $(document).ready(function(){
 	//var exampleView = new ExampleView($("#exampleView"), model);
 	var sideNavView = new SideNavView($("#sideNavView"),model);
 	var searchArea = new SearchArea($("#searchArea"), model);
-	var topBar= new TopBar($("#topBar"),model);
-	var detailView= new DetailView($("#detailView"),model);
+	var topBar = new TopBar($("#topBar"),model);
+	var detailView = new DetailView($("#detailView"),model);
 	var dinnerOverview= new DinnerOverview($("#dinnerOverview"),model);
 
 	var sideNavViewController = new SideNavViewController(sideNavView, model);
 	//var sideNavViewController = new SideNavViewController($("#sideNavView"),model);
 	var detailViewController = new DetailViewController(detailView,model);
+	var searchAreaController = new SearchAreaController(searchArea,model);
+	var dinnerOverviewController = new DinnerOverviewController(dinnerOverview,model);
+	var topBarController =new TopBarController(topBar, model);
 
 });
 

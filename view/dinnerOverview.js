@@ -2,7 +2,7 @@ var DinnerOverview = function (container, model) {
 
 	//this.showList = container.find(".showList");
 	//this.dinnerAll = container.find("#dinnerAll");
-
+	var printFinalButton= container.find("#printFinalButton");
 	var newDishes = model.getFullMenu();
    
     var html = "";
